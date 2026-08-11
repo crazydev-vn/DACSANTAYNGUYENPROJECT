@@ -1,7 +1,7 @@
 [
     {
         "id": "SP01",
-        "name": "Cà phê Robusta Buôn Ma Thuột",
+        "name": "Buon Ma Thuot Robusta Coffee",
         "category": "Cà phê",
         "origin": "Buôn Ma Thuột, Đắk Lắk",
         "price": 150000,
@@ -11,7 +11,7 @@
     },
     {
         "id": "SP02",
-        "name": "Cà phê Arabica Cầu Đất",
+        "name": "Cau Dat Arabica Coffee",
         "category": "Cà phê",
         "origin": "Cầu Đất, Đà Lạt, Lâm Đồng",
         "price": 220000,
@@ -21,7 +21,7 @@
     },
     {
         "id": "SP03",
-        "name": "Hạt Macca Sấy Nứt Krông Năng",
+        "name": "Krong Nang Cracked Macadamia Nuts",
         "category": "Hạt dinh dưỡng",
         "origin": "Krông Năng, Đắk Lắk",
         "price": 180000,
@@ -31,7 +31,7 @@
     },
     {
         "id": "SP04",
-        "name": "Hồ tiêu đen Chư Sê",
+        "name": "Chu Se Black Pepper",
         "category": "Gia vị",
         "origin": "Chư Sê, Gia Lai",
         "price": 120000,
@@ -41,7 +41,7 @@
     },
     {
         "id": "SP05",
-        "name": "Bột Ca cao nguyên chất M'Đrắk",
+        "name": "M'Drak Pure Cocoa Powder",
         "category": "Đồ uống",
         "origin": "M'Đrắk, Đắk Lắk",
         "price": 135000,
@@ -51,7 +51,7 @@
     },
     {
         "id": "SP06",
-        "name": "Mật ong hoa Cà phê Gia Lai",
+        "name": "Gia Lai Coffee Blossom Honey",
         "category": "Mật ong",
         "origin": "Chư Prông, Gia Lai",
         "price": 190000,
@@ -61,7 +61,7 @@
     },
     {
         "id": "SP07",
-        "name": "Trà Oolong Bảo Lộc",
+        "name": "Bao Loc Oolong Tea",
         "category": "Trà",
         "origin": "Bảo Lộc, Lâm Đồng",
         "price": 250000,
@@ -71,7 +71,7 @@
     },
     {
         "id": "SP08",
-        "name": "Rượu Cần Y Yăng",
+        "name": "Y Yang Tube Wine",
         "category": "Đặc sản truyền thống",
         "origin": "Buôn Đôn, Đắk Lắk",
         "price": 300000,
@@ -81,7 +81,7 @@
     },
     {
         "id": "SP09",
-        "name": "Sâm Ngọc Linh Tu Mơ Rông",
+        "name": "Tu Mo Rong Ngoc Linh Ginseng",
         "category": "Thảo dược",
         "origin": "Tu Mơ Rông, Kon Tum",
         "price": 2500000,
@@ -91,7 +91,7 @@
     },
     {
         "id": "SP10",
-        "name": "Măng khô Đắk Nông",
+        "name": "Dak Nong Dried Bamboo Shoots",
         "category": "Thực phẩm khô",
         "origin": "Gia Nghĩa, Đắk Nông",
         "price": 160000,

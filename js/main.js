@@ -20,7 +20,7 @@ function renderProducts(products) {
             <h3>${p.name}</h3>
             <p><strong>Loại:</strong> ${p.category}</p>
             <p><strong>Nguồn gốc:</strong> ${p.origin}</p>
-            <p>${p.description}</p>
+            <p class="description">${p.description}</p>
             <p class="price">${p.price.toLocaleString('vi-VN')} VNĐ / ${p.unit}</p>
         </div>
     `).join('');

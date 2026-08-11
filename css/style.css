@@ -224,17 +224,38 @@ nav a:hover {
     border: 1px solid var(--brown-light);
 }
 
+/* Cố định chiều cao & cắt dòng cho Tên sản phẩm */
 .card h3 {
     font-size: 1.1rem;
     margin-bottom: 0.45rem;
     color: var(--brown-deep);
     font-weight: 600;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 2.7em;
+    /* Dành khoảng trống cố định đúng 2 dòng */
 }
 
 .card p {
     font-size: 0.92rem;
     color: var(--text-body);
     margin-bottom: 0.3rem;
+}
+
+/* Cố định chiều cao & cắt dòng cho Giới thiệu/Mô tả sản phẩm */
+.card p.description {
+    line-height: 1.45;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Giới hạn tối đa 2 dòng */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 2.9em;
+    /* Dành khoảng trống cố định đúng 2 dòng */
+    margin-bottom: 0.6rem;
 }
 
 .card p strong {
