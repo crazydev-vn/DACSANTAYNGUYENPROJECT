@@ -1,124 +1,315 @@
+/* ============================================================
+   NÔNG SẢN TÂY NGUYÊN — Vintage / Rustic Theme
+   Đất nâu, gỗ mộc, giấy kem cũ, điểm nhấn xanh mộc & cam đất
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+:root {
+    /* Nâu đất / nâu gỗ */
+    --brown-deep: #4A2E1B;
+    --brown-wood: #6B4226;
+    --brown-light: #C9A277;
+
+    /* Nền kem / giấy cũ */
+    --cream-paper: #FAF6EE;
+    --cream-warm: #F3EBE0;
+
+    /* Điểm nhấn */
+    --green-moss: #3D5A3A;
+    --green-moss-dark: #2C4229;
+    --clay-orange: #B85B35;
+    --clay-orange-dark: #99492A;
+
+    --text-body: #3A2E26;
+    --shadow-soft: 0 4px 14px rgba(74, 46, 27, 0.12);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--text-body);
+    background-color: var(--cream-paper);
+    /* Vân giấy nhẹ bằng gradient, không cần ảnh nền */
+    background-image:
+        radial-gradient(rgba(74, 46, 27, 0.035) 1px, transparent 1px),
+        radial-gradient(rgba(74, 46, 27, 0.025) 1px, transparent 1px);
+    background-size: 26px 26px, 18px 18px;
+    background-position: 0 0, 9px 9px;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    color: var(--brown-deep);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+/* ---------------- Header ---------------- */
 header {
-    background: #2c5e3b;
-    color: white;
-    padding: 1rem 2rem;
+    background: var(--brown-deep);
+    background-image: linear-gradient(180deg, var(--brown-wood) 0%, var(--brown-deep) 100%);
+    color: var(--cream-paper);
+    padding: 1.2rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 4px solid var(--clay-orange);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    color: var(--cream-paper);
+    font-size: 1.5rem;
+    font-style: italic;
+    letter-spacing: 0.5px;
 }
 
 nav a {
-    color: white;
+    color: var(--cream-warm);
     text-decoration: none;
-    margin-left: 15px;
-    font-weight: bold;
+    margin-left: 18px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.25s ease, color 0.25s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: var(--clay-orange);
+    border-bottom-color: var(--clay-orange);
+    text-decoration: none;
 }
 
+/* ---------------- Layout ---------------- */
 .container {
     max-width: 1100px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    margin: 2.5rem auto;
+    padding: 0 1.2rem;
 }
 
+.container h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 0.6rem;
+}
+
+/* Đường viền trang trí mộc mạc dưới tiêu đề */
+.container h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin-top: 0.5rem;
+    background: repeating-linear-gradient(90deg,
+            var(--clay-orange) 0px,
+            var(--clay-orange) 8px,
+            var(--green-moss) 8px,
+            var(--green-moss) 16px);
+    border-radius: 2px;
+}
+
+/* ---------------- Hero ---------------- */
 .hero {
-    background: #e9f5ec;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
+    background: var(--cream-warm);
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2.5rem;
     text-align: center;
+    border: 1px solid var(--brown-light);
+    box-shadow: var(--shadow-soft);
+    position: relative;
 }
 
+.hero::before {
+    content: "🌿";
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.hero h2 {
+    display: inline-block;
+    font-size: 1.9rem;
+    font-style: italic;
+}
+
+.hero h2::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
+    max-width: 640px;
+    margin: 0.8rem auto 0;
+    color: var(--brown-wood);
+    font-size: 1rem;
+}
+
+/* ---------------- Filter buttons ---------------- */
 .filter-btn {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
     text-align: center;
 }
 
 .filter-btn button {
-    padding: 8px 16px;
+    padding: 9px 18px;
     margin: 4px;
-    border: none;
-    background: #2c5e3b;
-    color: white;
-    border-radius: 4px;
+    border: 1px solid var(--brown-wood);
+    background: var(--cream-paper);
+    color: var(--brown-deep);
+    border-radius: 20px;
     cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.15s ease;
 }
 
 .filter-btn button:hover {
-    background: #1e3f27;
+    background: var(--green-moss);
+    border-color: var(--green-moss-dark);
+    color: var(--cream-paper);
+    transform: translateY(-1px);
 }
 
-/* Khung hiển thị lưới sản phẩm */
+.filter-btn button:active {
+    background: var(--clay-orange-dark);
+    border-color: var(--clay-orange-dark);
+}
+
+/* ---------------- Product grid ---------------- */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.5rem;
+    gap: 1.6rem;
 }
 
-/* Thẻ sản phẩm */
 .card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background: var(--cream-paper);
+    border: 1px solid var(--brown-light);
+    border-radius: 10px;
+    padding: 1.1rem;
+    box-shadow: var(--shadow-soft);
     display: flex;
     flex-direction: column;
+    transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
 }
 
-/* QUAN TRỌNG: Quy định ảnh sản phẩm luôn là HÌNH VUÔNG 1:1 */
+.card:hover {
+    box-shadow: 0 8px 20px rgba(74, 46, 27, 0.18);
+    border-color: var(--clay-orange);
+    transform: translateY(-3px);
+}
+
 .card img {
     width: 100%;
     aspect-ratio: 1 / 1;
-    /* Ép tỷ lệ khung ảnh luôn luôn là hình vuông 1:1 */
     object-fit: cover;
-    /* Cắt ảnh thông minh vừa vặn khung vuông, không làm biến dạng ảnh */
-    border-radius: 6px;
-    margin-bottom: 0.8rem;
-    background-color: #e9ecef;
-    /* Màu nền xám nhẹ chờ khi ảnh tải */
+    border-radius: 7px;
+    margin-bottom: 0.9rem;
+    background-color: var(--cream-warm);
+    border: 1px solid var(--brown-light);
 }
 
 .card h3 {
     font-size: 1.1rem;
-    margin-bottom: 0.4rem;
-    color: #2c5e3b;
+    margin-bottom: 0.45rem;
+    color: var(--brown-deep);
+    font-weight: 600;
 }
 
 .card p {
     font-size: 0.92rem;
-    color: #555;
+    color: var(--text-body);
     margin-bottom: 0.3rem;
 }
 
-.price {
-    font-weight: bold;
-    color: #d9534f;
-    margin-top: auto;
-    padding-top: 0.5rem;
-    font-size: 1.05rem;
+.card p strong {
+    color: var(--green-moss);
 }
 
+.price {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--clay-orange-dark);
+    margin-top: auto;
+    padding-top: 0.6rem;
+    font-size: 1.1rem;
+    border-top: 1px dashed var(--brown-light);
+}
+
+/* ---------------- Contact page extras ---------------- */
+.container hr {
+    border: none;
+    border-top: 1px dashed var(--brown-light);
+    margin: 2rem 0;
+}
+
+.container code {
+    background: var(--cream-warm);
+    border: 1px solid var(--brown-light);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--brown-deep);
+}
+
+.container ul {
+    margin-left: 20px;
+    margin-top: 0.5rem;
+}
+
+.container ul li {
+    margin-bottom: 0.4rem;
+}
+
+.container a {
+    color: var(--green-moss);
+    font-weight: 700;
+}
+
+.container a:hover {
+    color: var(--clay-orange);
+}
+
+/* ---------------- Footer ---------------- */
 footer {
     text-align: center;
-    padding: 1.5rem;
-    background: #333;
-    color: white;
-    margin-top: 3rem;
+    padding: 1.6rem;
+    background: var(--brown-deep);
+    color: var(--cream-warm);
+    margin-top: 3.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+    border-top: 4px solid var(--green-moss);
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 640px) {
+    header {
+        flex-direction: column;
+        gap: 0.6rem;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
 }
