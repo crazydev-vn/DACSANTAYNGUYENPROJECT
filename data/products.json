@@ -1,0 +1,102 @@
+[
+    {
+        "id": "SP01",
+        "name": "Cà phê Robusta Buôn Ma Thuột",
+        "category": "Cà phê",
+        "origin": "Buôn Ma Thuột, Đắk Lắk",
+        "price": 150000,
+        "unit": "Hộp 500g",
+        "description": "Cà phê Robusta nguyên chất đậm đà, hương thơm nồng nàn đặc trưng của đất đỏ Bơ-zan.",
+        "image": "images/sp0001.png"
+    },
+    {
+        "id": "SP02",
+        "name": "Cà phê Arabica Cầu Đất",
+        "category": "Cà phê",
+        "origin": "Cầu Đất, Đà Lạt, Lâm Đồng",
+        "price": 220000,
+        "unit": "Hộp 500g",
+        "description": "Hương vị thanh chua nhẹ, hậu vị ngọt kéo dài, trồng ở độ cao trên 1500m.",
+        "image": "images/sp0002.png"
+    },
+    {
+        "id": "SP03",
+        "name": "Hạt Macca Sấy Nứt Krông Năng",
+        "category": "Hạt dinh dưỡng",
+        "origin": "Krông Năng, Đắk Lắk",
+        "price": 180000,
+        "unit": "Hũ 500g",
+        "description": "Hạt Macca béo bùi, giàu dinh dưỡng, được sấy nứt tự nhiên dễ bóc vỏ.",
+        "image": "images/sp0003.png"
+    },
+    {
+        "id": "SP04",
+        "name": "Hồ tiêu đen Chư Sê",
+        "category": "Gia vị",
+        "origin": "Chư Sê, Gia Lai",
+        "price": 120000,
+        "unit": "Túi 500g",
+        "description": "Tiêu hạt mẩy, cay nồng tự nhiên, nổi tiếng khắp trong và ngoài nước.",
+        "image": "images/sp0004.png"
+    },
+    {
+        "id": "SP05",
+        "name": "Bột Ca cao nguyên chất M'Đrắk",
+        "category": "Đồ uống",
+        "origin": "M'Đrắk, Đắk Lắk",
+        "price": 135000,
+        "unit": "Túi 400g",
+        "description": "Bột ca cao nguyên chất 100% không đường, thơm ngon, tốt cho sức khỏe.",
+        "image": "images/sp0005.png"
+    },
+    {
+        "id": "SP06",
+        "name": "Mật ong hoa Cà phê Gia Lai",
+        "category": "Mật ong",
+        "origin": "Chư Prông, Gia Lai",
+        "price": 190000,
+        "unit": "Chai 1 Lít",
+        "description": "Mật ong nguyên chất thu hoạch vào mùa hoa cà phê nở rộ, màu vàng sánh mịn.",
+        "image": "images/sp0006.png"
+    },
+    {
+        "id": "SP07",
+        "name": "Trà Oolong Bảo Lộc",
+        "category": "Trà",
+        "origin": "Bảo Lộc, Lâm Đồng",
+        "price": 250000,
+        "unit": "Hộp 250g",
+        "description": "Trà Oolong chọn lọc từ những búp trà tươi, hương thơm thanh khiết.",
+        "image": "images/sp0007.png"
+    },
+    {
+        "id": "SP08",
+        "name": "Rượu Cần Y Yăng",
+        "category": "Đặc sản truyền thống",
+        "origin": "Buôn Đôn, Đắk Lắk",
+        "price": 300000,
+        "unit": "Bình 5 Lít",
+        "description": "Rượu cần truyền thống lên men từ rễ cây rừng và nếp nương đậm đà bản sắc.",
+        "image": "images/sp0008.png"
+    },
+    {
+        "id": "SP09",
+        "name": "Sâm Ngọc Linh Tu Mơ Rông",
+        "category": "Thảo dược",
+        "origin": "Tu Mơ Rông, Kon Tum",
+        "price": 2500000,
+        "unit": "Củ 100g",
+        "description": "Quốc bảo Việt Nam, giàu hàm lượng Saponin bồi bổ sức khỏe toàn diện.",
+        "image": "images/sp0009.png"
+    },
+    {
+        "id": "SP10",
+        "name": "Măng khô Đắk Nông",
+        "category": "Thực phẩm khô",
+        "origin": "Gia Nghĩa, Đắk Nông",
+        "price": 160000,
+        "unit": "Gói 500g",
+        "description": "Măng nứa phơi nắng tự nhiên, không chất bảo quản, giòn ngọt thanh vị.",
+        "image": "images/sp0010.png"
+    }
+]

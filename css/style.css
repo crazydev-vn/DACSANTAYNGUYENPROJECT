@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: #2c5e3b;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hero {
+    background: #e9f5ec;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.filter-btn {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.filter-btn button {
+    padding: 8px 16px;
+    margin: 4px;
+    border: none;
+    background: #2c5e3b;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-btn button:hover {
+    background: #1e3f27;
+}
+
+/* Khung hiển thị lưới sản phẩm */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Thẻ sản phẩm */
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+/* QUAN TRỌNG: Quy định ảnh sản phẩm luôn là HÌNH VUÔNG 1:1 */
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* Ép tỷ lệ khung ảnh luôn luôn là hình vuông 1:1 */
+    object-fit: cover;
+    /* Cắt ảnh thông minh vừa vặn khung vuông, không làm biến dạng ảnh */
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+    background-color: #e9ecef;
+    /* Màu nền xám nhẹ chờ khi ảnh tải */
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    color: #2c5e3b;
+}
+
+.card p {
+    font-size: 0.92rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.price {
+    font-weight: bold;
+    color: #d9534f;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-size: 1.05rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #333;
+    color: white;
+    margin-top: 3rem;
+}
